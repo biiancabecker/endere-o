@@ -61,8 +61,18 @@ public class ManutencaoEndereco extends javax.swing.JDialog {
         });
 
         btnAlterar.setText("Alterar");
+        btnAlterar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAlterarActionPerformed(evt);
+            }
+        });
 
         btnExcluir.setText("Excluir");
+        btnExcluir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnExcluirActionPerformed(evt);
+            }
+        });
 
         btnCancelar.setText("Cancelar");
 
@@ -145,6 +155,14 @@ public class ManutencaoEndereco extends javax.swing.JDialog {
 controlador.ControladorEndereco.inserir(this);        // TODO add your handling code here:
     }//GEN-LAST:event_btnAdicionarActionPerformed
 
+    private void btnAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAlterarActionPerformed
+controlador.ControladorEndereco.alterar(this);        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAlterarActionPerformed
+
+    private void btnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExcluirActionPerformed
+controlador.ControladorEndereco.excluir(this);        // TODO add your handling code here:
+    }//GEN-LAST:event_btnExcluirActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -193,12 +211,12 @@ controlador.ControladorEndereco.inserir(this);        // TODO add your handling 
     public javax.swing.JButton btnCancelar;
     public javax.swing.JButton btnExcluir;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    public javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     public javax.swing.JTextField jtfBairro;
-    private javax.swing.JTextField jtfCodigo;
+    public javax.swing.JTextField jtfCodigo;
     public javax.swing.JTextField jtfComplemento;
     public javax.swing.JTextField jtfLongadouro;
     // End of variables declaration//GEN-END:variables
